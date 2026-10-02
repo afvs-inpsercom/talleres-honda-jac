@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.talleresjac.com" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Mi Armacar(Jac) Talleres</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+     <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="InspectableWebview" value="false" />
+    <platform name="android">
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" />
+</edit-config>
+        <resource-file src="resources/android/xml/network_security_config.xml" target="app/src/main/res/xml/network_security_config.xml" />
+        <resource-file src="resources/android/raw/biss_intermediate.cer" target="app/src/main/res/raw/biss_intermediate.cer" />
+        <preference name="AndroidInsecureFileModeEnabled" value="true" />
+        <preference name="android-targetSdkVersion" value="36" />
+        <allow-intent href="market:*" />
+       <platform name="android">
+    <config-file target="app/src/main/AndroidManifest.xml" parent="application" xmlns:android="http://schemas.android.com/apk/res/android">
+        <application android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" />
+    </config-file>
+</platform>
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash-icon.png" />
+        <!-- <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
+        <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
+        <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
+        <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
+        <splash density="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
+        <splash density="port-xxxhdpi" src="res/screen/android/splash-port-xxxhdpi.png" />
+        <splash density="land-ldpi" src="res/screen/android/splash-land-ldpi.png" />
+        <splash density="land-mdpi" src="res/screen/android/splash-land-mdpi.png" />
+        <splash density="land-hdpi" src="res/screen/android/splash-land-hdpi.png" />
+        <splash density="land-xhdpi" src="res/screen/android/splash-land-xhdpi.png" />
+        <splash density="land-xxhdpi" src="res/screen/android/splash-land-xxhdpi.png" />
+        <splash density="land-xxxhdpi" src="res/screen/android/splash-land-xxxhdpi.png" /> -->
+        <preference name="SplashScreen" value="screen" />
+        <preference name="AutoHideSplashScreen" value="true" />
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="ShowSplashScreenSpinner" value="false" />
+        <preference name="SplashMaintainAspectRatio" value="false" />
+        <preference name="SplashShowOnlyFirstTime" value="true" />
+        <!-- Configuración para pantalla completa -->
+        <!-- <preference name="SplashScreenWidth" value="screen" />
+        <preference name="SplashScreenHeight" value="screen" /> -->
+        <preference name="SplashScreenBackgroundColor" value="#ffffff" />
+        <!-- Desactiva el splash nativo de Android que causa el overlay -->
+        <preference name="AndroidWindowSplashScreenBackground" value="#ffffff" />
+        <preference name="AndroidWindowSplashScreenAnimatedIconScaleType" value="fill" />
+        <preference name="AndroidLaunchMode" value="singleTop" />
+ 
+        <!-- Usa el splash como icono también si no tienes iconos específicos -->
+        <icon density="ldpi" src="res/icon/android/ldpi.png" />
+        <icon density="mdpi" src="res/icon/android/mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
+        <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/icon/android/xxxhdpi.png" />
+    <!--  Ícono que se muestra en el splash -->
+   <!--  <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/android/drawable-hdpi/splashscreen.png" /> -->
+
+    <!-- Color de fondo del splash -->
+    <!-- <preference name="AndroidWindowSplashScreenBackground" value="#FFFFFF" /> -->
+
+    <!-- Mantener aspecto de la imagen -->
+    <!-- <preference name="AndroidWindowSplashScreenScaleType" value="CENTER_CROP" /> -->
+
+    <!-- Tiempo visible (milisegundos) -->
+    <!-- <preference name="SplashScreenDelay" value="3000" /> -->
+
+    <!-- Ocultar automáticamente -->
+   <!--  <preference name="AutoHideSplashScreen" value="true" />  -->
+        <!-- <preference name="SplashScreen" value="screen" />
+        <preference name="AutoHideSplashScreen" value="true" />
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="ShowSplashScreenSpinner" value="false" />
+        <preference name="SplashMaintainAspectRatio" value="true" />
+        <preference name="SplashShowOnlyFirstTime" value="true" />
+        <feature name="SplashScreen">
+            <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+            <param name="onload" value="true" />
+        </feature>
+        <icon density="hdpi" src="www/res/android/drawable-hdpi/icon.png" />
+        <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
+        <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
+        <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
+        <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
+        <splash density="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
+        <splash density="port-xxxhdpi" src="res/screen/android/splash-port-xxxhdpi.png" />
+        <splash density="land-ldpi" src="res/screen/android/splash-land-ldpi.png" />
+        <splash density="land-mdpi" src="res/screen/android/splash-land-mdpi.png" />
+        <splash density="land-hdpi" src="res/screen/android/splash-land-hdpi.png" />
+        <splash density="land-xhdpi" src="res/screen/android/splash-land-xhdpi.png" />
+        <splash density="land-xxhdpi" src="res/screen/android/splash-land-xxhdpi.png" />
+        <splash density="land-xxxhdpi" src="res/screen/android/splash-land-xxxhdpi.png" /> -->
+        <!-- <plugin name="cordova-plugin-mlkit-barcode-scanner" spec="^3.0.7" /> -->
+        <!-- <plugin name="cordova-plugin-splashscreen" version="5.0.2" /> -->
+        <!-- <plugin name="phonegap-plugin-barcodescanner" version="^8.1.0" /> -->
+        <!-- <plugin name="cordova-plugin-file" version="4.3.3" /> -->
+        <!-- <plugin name="cordova-plugin-camera" version="7.0.0" /> -->
+    </platform>
+</widget>

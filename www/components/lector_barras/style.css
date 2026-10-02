@@ -1,0 +1,96 @@
+
+    div.k-content.k-state-active {
+        min-width: 90% !important;
+    }
+
+    #packsGridssss {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        min-width: 370%;
+        margin: auto;
+    }
+    .km-content .km-widget .km-scroll-wrapper{
+        position: aboslute;
+        background-color: 'red';
+    }
+    .tabstripSeg1 .k-content {
+        width: 100%;
+        min-width: 370%;
+    }
+
+    .tabstripSeg1 .k-state-active {
+        margin: auto;
+    }
+
+    .responsivo1 {
+        margin: auto;
+    }
+
+    .bg-color {
+        background-color: rosybrown;
+    }
+
+    .rows {
+        display: flex;
+        justify-content: space-between;
+    }
+    #tabstrip2 > .k-content {
+        overflow: visible !important;
+      }
+    .k-content {
+        width: unset !important;
+    }
+
+    .k-tabstrip .k-content.k-state-active {
+        height: 100vh !important;
+    }
+
+    .k-checkbox2 {
+        width: 15px;
+        height: 15px;
+    }
+
+    .k-overflow-container .k-primary,
+    .k-primary {
+        background-color: unset;
+        border-color: unset;
+    }
+
+    .k-state-selected {
+        background-color: rgb(187, 190, 190);
+    }
+
+    .k-grid tr.k-state-selected:hover {
+        background-color: rgb(185, 187, 187);
+    }
+
+    .k-overflow-container .k-primary,
+    .k-primary:focus {
+        background-color: unset;
+        border-color: unset;
+    }
+
+    .k-grid-content {
+        overflow-x: scroll !important;
+    }
+
+    #content2 {
+        background: none repeat #A0EC25 !important;
+    }
+
+    #scrollable {
+        height: 1117px;
+        overflow-y: scroll;
+    }
+
+    #WindowLoad {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 3200;
+        filter: alpha(opacity=65);
+        -moz-opacity: 65;
+        opacity: 0.65;
+        background: #999;
+    }
