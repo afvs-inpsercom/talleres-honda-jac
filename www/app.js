@@ -10,8 +10,8 @@ verVersion();
 var UrlCitasTaller = "";
 var UrlFacturaSGC = "";
 var UrlGarantiaSql = "";
-//var wsPrincipal = "http://20.25.59.109:8092/appk_honda_pru"; //TEST
-var wsPrincipal = "http://172.19.1.10:8092/appk_honda_pru"; //PRUEBAS
+//var wsPrincipal = "http://20.25.59.109:8092/appk_jac_pru"; //TEST
+var wsPrincipal = "http://172.19.1.10:8092/appk_jac_pru"; //PRUEBAS
 // var wsPrincipal = "http://200.31.10.92:8092/appk_aekia";
 var htmlFormatoEV = "";
 var ambiente
