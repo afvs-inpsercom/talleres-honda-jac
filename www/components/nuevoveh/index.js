@@ -2246,7 +2246,7 @@ function formatoImpEV(bolVisEV) {
             "</td>" +
             "</tr>" +
             "<tr>" +
-            "<td colspan='2'><p style='padding-bottom:10px'><label style='font-family:Arial; font-size:11px'>Se realiza la entrega a entera satisfacci&#243;n de un veh&#237;culo nuevo marca Armacar(Jac) con las siguientes caracter&#237;sticas:</p>" +
+            "<td colspan='2'><p style='padding-bottom:10px'><label style='font-family:Arial; font-size:11px'>Se realiza la entrega a entera satisfacci&#243;n de un veh&#237;culo nuevo marca Honda con las siguientes caracter&#237;sticas:</p>" +
             "</td>" +
             "</tr>" +
             "<tr> " +
@@ -4435,7 +4435,7 @@ function formatoMailEV(bolVisEV) {
         "</td>" +
         "</tr>" +
         "<tr>" +
-        "<td colspan='2'><p style='padding-bottom:10px'><label style='font-family:Arial; font-size:11px'>Se realiza la entrega a entera satisfacci&#243;n de un veh&#237;culo nuevo marca Armacar(Jac) con las siguientes caracter&#237;sticas:</p>" +
+        "<td colspan='2'><p style='padding-bottom:10px'><label style='font-family:Arial; font-size:11px'>Se realiza la entrega a entera satisfacci&#243;n de un veh&#237;culo nuevo marca Honda con las siguientes caracter&#237;sticas:</p>" +
         "</td>" +
         "</tr>" +
         "<tr> " +

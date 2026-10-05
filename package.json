@@ -1,6 +1,6 @@
 {
-  "name": "com.talleresjac.com",
-  "displayName": "Mi Armacar(Jac) Talleres",
+  "name": "com.tallereshonda.com",
+  "displayName": "Nihon Motors Talleres",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
@@ -17,7 +17,7 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
-    "cordova-android": "^15.0.0",
+    "cordova-android": "^15.1.0",
     "cordova-plugin-advanced-http": "^3.3.1",
     "cordova-plugin-androidx-adapter": "^1.1.3",
     "cordova-plugin-compat": "^1.2.0",
