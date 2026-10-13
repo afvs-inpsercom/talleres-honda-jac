@@ -567,3 +567,58 @@
 .km-nova .field--gallery:not(.field--gallery-slider) .field__content .gallery__items:after {
   background: #dfe1e2;
 }
+
+/* Responsive container fixes */
+#2tablaEntVeh,
+#tablaEntVehSGC,
+#tablaEntVeh,
+#2tablaEntregaDet,
+#tablaEntregaDetSGC,
+#tablaEntregaDet,
+#tablaOT2,
+#tablaOT2CA,
+#divControlesSeg,
+#2agendaEntrega,
+#agendaEntrega,
+.easycal,
+.k-grid,
+.responsivo,
+.responsivo1 {
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+#2tablaEntregaDet,
+#tablaEntregaDetSGC,
+#tablaEntregaDet,
+#divControlesSeg,
+#2agendaEntrega,
+#agendaEntrega,
+.responsivo,
+.responsivo1 {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.k-grid-content {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.k-window,
+.k-dialog {
+  max-width: 95vw !important;
+  box-sizing: border-box !important;
+}
+
+#tabstrip,
+#tabstripCitas,
+#tabstripOT,
+#tabstripVIN,
+#tabstripEV,
+#tabstripEV2 {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+

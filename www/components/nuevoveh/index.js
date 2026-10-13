@@ -167,7 +167,7 @@ function vistaParametrosEntVeh() {
     document.getElementById("playVideo_ev").innerHTML = "";
     document.getElementById('fileOT_ev').value = "";
 
-    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 361) {
+    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 600) {
         document.getElementById("tablaEntVeh").innerHTML = "<table align='center' border='0' cellspacing='0' cellpadding='0'>" +
         "<tr>" +
         "<td>" +
@@ -225,17 +225,17 @@ function vistaParametrosEntVeh() {
         document.getElementById("tablaEntVeh").innerHTML = "<table align='center' border='0' cellspacing='0' cellpadding='0'>" +
         "<tr>" +
         "<td>" +
-        "<p><label class='w3-text-red'><b>Inicio</b></label></p><p><input id='dpentFecIni' style='max-width:100px' /></p>" +
+        "<p><label class='w3-text-red'><b>Inicio</b></label></p><p><input id='dpentFecIni' style='max-width:95px' /></p>" +
         "</td> " +
         "<td>" +
-        "<p><label class='w3-text-red'><b>Fin</b></label></p><p><input id='dpentFecFin' style='max-width:100px' /></p>" +
+        "<p><label class='w3-text-red'><b>Fin</b></label></p><p><input id='dpentFecFin' style='max-width:95px' /></p>" +
         "</td> " +
         "<td valign='bottom'>" +
-        "<button onclick='entConsultar();' class='w3-btn w3-red'><i class='fa fa-search' aria-hidden='true'></i></button>&nbsp;" +
+        "<p><button onclick='entConsultar();' class='w3-btn w3-red' style='padding:6px 8px'><i class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>&nbsp;</p>" +
         "</td>" +
          "<td valign='bottom'>" +
-        "<button class='w3-btn w3-red'><a id='mostrar2' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
-        "<a id='ocultar2' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button>" +
+        "<p><button class='w3-btn w3-red' style='padding:6px 8px'><a id='mostrar2' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
+        "<a id='ocultar2' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button></p>" +
         "</td>" +
         "</tr>" +
 
@@ -265,7 +265,9 @@ function vistaParametrosEntVeh() {
         "</table>" +
         "</div>";
 
-        document.getElementById("btnFooterEntrega").innerHTML = "<button onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i class='fa fa-chevron-left' aria-hidden='true'></i></button>";
+        document.getElementById("btnFooterEntrega").innerHTML = "<button id='btnRegrearEntrega0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegrearEntrega0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+        llamarNuevoestiloIconB("icnRegrearEntrega");
+        llamarNuevoestilo("btnRegrearEntrega");
 
         //  document.getElementById("btnFooterEntrega").innerHTML += "<a class='w3-btn w3-red primary' aria-label='Buscar2' onclick='captureImagenEV();'><i class='fa fa-camera-retro' aria-hidden='true'></i> foto</a>";
     }
@@ -5188,7 +5190,7 @@ function ConsultaKiaMax(idordenfacturacion) {
         var paramFP = {
                 "id": idordenfacturacion
         }; 
-        var UrlFP = "https://biss.kiaecuador.com.ec/api/RdnFctL/VmCsKMx"; //"https://play.google.com/store/apps/details?id="+bundle;
+        var UrlFP = "https://biss.nihon.com.ec/api/RdnFctL/VmCsKMx"; //"https://play.google.com/store/apps/details?id="+bundle;
         $.ajax({
                 url: UrlFP,
                 type: "POST",
@@ -5222,7 +5224,7 @@ function GuardarFormaPagoSQL(idDetalleFP,formaPagoFP,nombreUsuario) {
                 "dt1":formaPagoFP,
                 "dt2":nombreUsuario
         }; 
-        var UrlFP = "https://biss.kiaecuador.com.ec/api/DtVhCtz/VmActFrmPg"; //"https://play.google.com/store/apps/details?id="+bundle;
+        var UrlFP = "https://biss.nihon.com.ec/api/DtVhCtz/VmActFrmPg"; //"https://play.google.com/store/apps/details?id="+bundle;
         $.ajax({
                 url: UrlFP,
                 type: "POST",
@@ -5253,7 +5255,7 @@ function ConsultaKiaSur(idordenfacturacion) {
         var paramFP = {
                 "id": idordenfacturacion
         }; 
-        var UrlFP = "https://biss.kiaecuador.com.ec/api/RdnFctL/VmCnsltKSmrt"; //"https://play.google.com/store/apps/details?id="+bundle;
+        var UrlFP = "https://biss.nihon.com.ec/api/RdnFctL/VmCnsltKSmrt"; //"https://play.google.com/store/apps/details?id="+bundle;
         $.ajax({
                 url: UrlFP,
                 type: "POST",

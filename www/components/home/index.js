@@ -252,16 +252,25 @@ function verMenu(vista) {
 function menuxNivel() {
     var arrItem = [
         "Cambiar Agencia",
+        "Seguimiento Veh&iacute;culos Nuevos",
+        "Agenda Entrega",
+        "Consulta facturas SGC",
         "Entrega Veh&#237;culos Nuevos"
     ];
 
     var arrIco = [
         "fa-caret-square-o-down",
+        "fa-forward",
+        "fa-calendar-check-o",
+        "fa-id-card-o",
         "fa-taxi"
     ];
 
     var arrLink = [
         "verMenu(\"0\")",
+        "vista",
+        "agencia",
+        "facturasgc",
         "nuevoveh"
     ];
  

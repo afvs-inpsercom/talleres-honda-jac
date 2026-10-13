@@ -161,7 +161,7 @@ function vistaParametrosEntVeh2() {
 
     document.getElementById("2tablaEntregaDet").style.display = "none";
 
-    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 361) {
+    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 600) {
         document.getElementById("2tablaEntVeh").innerHTML = "<table align='center' border='0' cellspacing='0' cellpadding='0'>" +
         "<tr>" +
         "<td>" +
@@ -220,17 +220,17 @@ function vistaParametrosEntVeh2() {
         document.getElementById("2tablaEntVeh").innerHTML = "<table align='center' border='0' cellspacing='0' cellpadding='0'>" +
         "<tr>" +
         "<td>" +
-        "<p><label class='w3-text-red'><b>Inicio</b></label></p><p><input id='2dpentFecIni' style='max-width:100px' /></p>" +
+        "<p><label class='w3-text-red'><b>Inicio</b></label></p><p><input id='2dpentFecIni' style='max-width:95px' /></p>" +
         "</td> " +
         "<td>" +
-        "<p><label class='w3-text-red'><b>Fin</b></label></p><p><input id='2dpentFecFin' style='max-width:100px' /></p>" +
+        "<p><label class='w3-text-red'><b>Fin</b></label></p><p><input id='2dpentFecFin' style='max-width:95px' /></p>" +
         "</td> " +
         "<td valign='bottom'>" +
-        "<button onclick='entConsultar2();' class='w3-btn w3-red'><i class='fa fa-search' aria-hidden='true'></i></button>&nbsp;" +
+        "<p><button id='btnBuscarAgecia0' onclick='entConsultar2();' class='w3-btn' style='padding:6px 8px'><i id='2ocultar0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>&nbsp;</p>" +
         "</td>" +
          "<td valign='bottom'>" +
-        "<button id='btnBuscarAgecia0' class='w3-btn'><a id='2mostrar2' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
-        "<a id='2ocultar2' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button>" +
+        "<p><button id='btnBuscarAgecia1' class='w3-btn' style='padding:6px 8px'><a id='2mostrar2' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
+        "<a id='2ocultar2' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button></p>" +
         "</td>" +
         "</tr>" +
 
@@ -260,7 +260,7 @@ function vistaParametrosEntVeh2() {
         "</table>" +
         "</div>";
 
-        document.getElementById("2btnFooterEntrega").innerHTML = "<button onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i class='fa fa-chevron-left' aria-hidden='true'></i></button>";
+        document.getElementById("2btnFooterEntrega").innerHTML = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
 
     }
 llamarColorTexto(".w3-text-red");
@@ -1504,13 +1504,7 @@ function cargaInfoAgendaEntrega(dataGrid2) {
     agendaEntrega2(dataGrid2, document.getElementById("2datepicker").value);
 
 
-    var htmlBotones = "";
-    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 361) {
-        htmlBotones = "<button id='btnRegresarAgencia0' onclick='volverForm2()' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
-    }
-    else {
-        htmlBotones = "<button id='btnRegresarAgencia0' onclick='volverForm2()' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i></button>";
-    }
+    var htmlBotones = "<button id='btnRegresarAgencia0' onclick='volverForm2()' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
 
     document.getElementById("2btnFooterEntrega").innerHTML = htmlBotones;
     llamarNuevoestilo("btnRegresarAgencia");
@@ -2232,13 +2226,7 @@ function volverForm2() {
 
     entConsultar2();
 
-    var htmlBotones = "";
-    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 361) {
-        htmlBotones = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
-    }
-    else {
-        htmlBotones = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i></button>";
-    }
+    var htmlBotones = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
     
     document.getElementById("2btnFooterEntrega").innerHTML = htmlBotones;
     llamarNuevoestilo("btnRegresarAgencia");

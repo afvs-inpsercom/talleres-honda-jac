@@ -3347,7 +3347,7 @@ function EnvioWhatsAppSQL(telefono,nombre,vin,nombreUsuario,numeroot, codigoEmpr
                 "dt7":CodigoAgencia
         }; 
        
-        var UrlFP = "https://biss.kiaecuador.com.ec/api/NtfWhtpp/VmNvNtf"; 
+        var UrlFP = "https://biss.nihon.com.ec/api/NtfWhtpp/VmNvNtf"; 
         
         $.ajax({
                 url: UrlFP,

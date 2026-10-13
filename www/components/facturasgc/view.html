@@ -1,7 +1,7 @@
 <div data-role="view" data-title="text: strings.facturasgc.title" data-layout="main" data-model="app.facturasgc" data-show="app.facturasgc.onShow" data-after-show="app.facturasgc.afterShow" id="facturasgcScreen" class="screen">
     <header data-role="header">
         <div data-role="navbar" class="header-text">
-            <i class='fa fa-calendar-check-o' aria-hidden='true'></i>  <span data-bind="text: strings.facturasgc.title" style="font-weight:bold"></span>
+            <i class='fa fa-id-card-o' aria-hidden='true'></i>  <span data-bind="text: strings.facturasgc.title" style="font-weight:bold"></span>
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
             <a id="volver_entSGC" data-align="right" class="fa fa-reply" aria-hidden="true" data-role="button"></a>
         </div>
@@ -34,7 +34,7 @@
         <div id="tablaEntVehSGC"></div>
 
     </header>
-    <table align="center" width="95%" border="0" cellspacing="0" cellpadding="0" id="tablaEntregaDetSGC" style="display:block">
+    <table align="center" width="95%" border="0" cellspacing="0" cellpadding="0" id="tablaEntregaDetSGC" style="display:block; max-width:100%; overflow-x:auto;">
         <tr>
             <td>
                 <div id="gridListaEntregaSGC" style="font-size:11px; width:1500px"></div>

@@ -1503,7 +1503,7 @@ function admCierraOT(modoOT, dataMenu) {
 
 
 function vistaParametros() {
-    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 361) {
+    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 600) {
         document.getElementById("tablaOT2").innerHTML = "<table align='center' border='0' cellspacing='0' cellpadding='0'>" +
                                                         "    <tr>" +
                                                         "        <td >" +
@@ -1544,7 +1544,7 @@ function vistaParametros() {
                                                         "                <button id='btnBuscar0' onclick='admConsultarOT();' class='w3-btn'><i id='icnBuscar0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>" +
                                                                 "&nbsp;&nbsp;<button id='btnBuscar1' class='w3-btn'><a id='mostrar3' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
                                                         "<a id='ocultar3' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button>" +
-                                                      "            </p>" +
+                                                       "            </p>" +
                                                         "        </td>" +
                                                         "    </tr>" +
 
@@ -1609,8 +1609,8 @@ function vistaParametros() {
                                                         "                </td>" +
                                                         "                <td valign='bottom'>" +
                                                         "                    <p>" +
-                                                        "                        <button onclick='admConsultarOT();' class='w3-btn w3-red'><i class='fa fa-search' aria-hidden='true'></i> </button>" +
-                                                                "&nbsp;&nbsp;<button class='w3-btn w3-red'><a id='mostrar3' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
+                                                        "                        <button id='btnBuscar0' onclick='admConsultarOT();' class='w3-btn' style='padding:6px 8px'><i id='icnBuscar0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>" +
+                                                                "&nbsp;&nbsp;<button id='btnBuscar1' class='w3-btn' style='padding:6px 8px'><a id='mostrar3' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
                                                         "<a id='ocultar3' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button>" +
 
                                                         "                    <input name='otProp' type='hidden' id='otProp' class='w3-input w3-border textos'></p>" +
@@ -1702,13 +1702,13 @@ llamarColorTexto(".w3-text-red");
     //"<button onclick='vistaParametros();' class='w3-btn w3-red'><i class='fa fa-file' aria-hidden='true'></i> NUEVO</button>";
 
 
-    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 361) {
+    if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 600) {
         document.getElementById("btnFooterOT").innerHTML = "<button id='btnpie0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnpie0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>" +
     "<button id='btnpie1' onclick='vistaParametros();' class='w3-btn'><i id='icnpie1' class='fa fa-file' aria-hidden='true'></i> NUEVO</button>";
     }
     else {
-        document.getElementById("btnFooterOT").innerHTML = "<button id='btnpie0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnpie0' class='fa fa-chevron-left' aria-hidden='true'></i></button>" +
-    "<button id='btnpie1' onclick='vistaParametros();' class='w3-btn'><i id='icnpie1' class='fa fa-file' aria-hidden='true'></i></button>";
+        document.getElementById("btnFooterOT").innerHTML = "<button id='btnpie0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnpie0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>" +
+    "<button id='btnpie1' onclick='vistaParametros();' class='w3-btn'><i id='icnpie1' class='fa fa-file' aria-hidden='true'></i> NUEVO</button>";
     }
     llamarNuevoestilo("btnpie");
     llamarNuevoestiloIconB("icnpie");

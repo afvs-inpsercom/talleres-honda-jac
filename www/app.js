@@ -4,15 +4,23 @@
 
 // cel: 340 x 640
 
-localStorage.setItem("ls_dimensionW", screen.width );
-localStorage.setItem("ls_dimensionH", screen.height);
+function actualizarDimensiones() {
+    var scrW = window.innerWidth || (typeof $ !== "undefined" && $(window).width()) || screen.width;
+    var scrH = window.innerHeight || (typeof $ !== "undefined" && $(window).height()) || screen.height;
+    localStorage.setItem("ls_dimensionW", scrW);
+    localStorage.setItem("ls_dimensionH", scrH);
+}
+actualizarDimensiones();
+window.addEventListener("resize", actualizarDimensiones);
+window.addEventListener("orientationchange", function () {
+    setTimeout(actualizarDimensiones, 250);
+});
 verVersion();
 var UrlCitasTaller = "";
 var UrlFacturaSGC = "";
 var UrlGarantiaSql = "";
-//var wsPrincipal = "http://20.25.59.109:8092/appk_honda_pru"; //TEST
-var wsPrincipal = "http://172.19.1.10:8092/appk_honda_pru"; //PRUEBAS
-// var wsPrincipal = "http://200.31.10.92:8092/appk_aekia";
+var wsPrincipal = "http://20.80.234.105:8092/appk_armacar_pru"; //PRUEBAS
+// var wsPrincipal = "http://20.80.234.105:8092/appk_armacar_pro";
 var htmlFormatoEV = "";
 var ambiente
 //anterior "http://186.71.21.170:8089";
@@ -621,7 +629,7 @@ function verVersion(){
         var param = {
                 "dt2": "APP MOVIL"
         };
-        var Url = "https://biss.kiaecuador.com.ec/api/MnMrE/VmSMMnE"; //"https://play.google.com/store/apps/details?id="+bundle;
+        var Url = "https://biss.nihon.com.ec/api/MnMrE/VmSMMnE"; //"https://play.google.com/store/apps/details?id="+bundle;
         // Prefer native HTTP on Android (avoids WebView/XHR networking issues)
         var hasNativeHttp = typeof cordova !== "undefined" &&
             cordova.plugin &&
