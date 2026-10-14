@@ -629,7 +629,7 @@ function verVersion(){
         var param = {
                 "dt2": "APP MOVIL"
         };
-        var Url = "https://biss.nihon.com.ec/api/MnMrE/VmSMMnE"; //"https://play.google.com/store/apps/details?id="+bundle;
+        var Url = "https://biss.kiaecuador.com.ec/api/MnMrE/VmSMMnE"; //"https://play.google.com/store/apps/details?id="+bundle;
         // Prefer native HTTP on Android (avoids WebView/XHR networking issues)
         var hasNativeHttp = typeof cordova !== "undefined" &&
             cordova.plugin &&
@@ -758,7 +758,7 @@ function llamarColorTexto(menu){
   // Loop over each element....
   if(elements.length)
   elements.forEach(function(el){
-           el.style.color = "rgba("+rgbnuevo.dt5.r+","+rgbnuevo.dt1.g+","+rgbnuevo.dt1.b+",1)";
+           el.style.color = "rgba("+rgbnuevo.dt5.r+","+rgbnuevo.dt5.g+","+rgbnuevo.dt5.b+",1)";
           });   
 }
 function llamarColorBotonGeneral(menu){

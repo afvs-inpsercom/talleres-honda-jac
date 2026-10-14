@@ -82,8 +82,8 @@ try {
 
         "<td valign='bottom' style='text-align:right'>" +
         "<p>" +
-         "<button id='btnBuscarAgeciaSGC0' onclick='entConsultarSGC();' class='w3-btn'><i id='ocultarSGC0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>" +
-        "&nbsp;&nbsp;<button id='btnBuscarAgeciaSGC1' class='w3-btn'><a id='mostrarSGC' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
+         "<button id='btnBuscarAgeciaSGC0' onclick='entConsultarSGC();' class='w3-btn w3-red'><i id='ocultarSGC0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>" +
+        "&nbsp;&nbsp;<button id='btnBuscarAgeciaSGC1' class='w3-btn w3-red'><a id='mostrarSGC' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
         "<a id='ocultarSGC' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button>" +
         "</p>" +
         "</td>" +
@@ -115,7 +115,7 @@ try {
         "</div>" +
         "</td></tr>" +
          "</table>";
-        document.getElementById("btnFooterEntregaSGC").innerHTML = "<button id='btnRegresarAgenciaSGC0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgenciaSGC0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+        document.getElementById("btnFooterEntregaSGC").innerHTML = "<button id='btnRegresarAgenciaSGC0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegresarAgenciaSGC0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
 
     }
     else {
@@ -128,17 +128,17 @@ try {
         "<p><label class='w3-text-red'><b>Fin</b></label></p><p><input id='dpentFecFinSGC' style='max-width:95px' /></p>" +
         "</td> " +
         "<td valign='bottom'>" +
-        "<p><button id='btnBuscarAgeciaSGC0' onclick='entConsultarSGC();' class='w3-btn' style='padding:6px 8px'><i id='ocultarSGC0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>&nbsp;</p>" +
+        "<p><button id='btnBuscarAgeciaSGC0' onclick='entConsultarSGC();' class='w3-btn w3-red' style='padding:6px 8px'><i id='ocultarSGC0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>&nbsp;</p>" +
         "</td>" +
          "<td valign='bottom'>" +
-        "<p><button id='btnBuscarAgeciaSGC1' class='w3-btn' style='padding:6px 8px'><a id='mostrarSGC' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
+        "<p><button id='btnBuscarAgeciaSGC1' class='w3-btn w3-red' style='padding:6px 8px'><a id='mostrarSGC' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
         "<a id='ocultarSGC' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button></p>" +
         "</td>" +
         "</tr>" +
 
          "<tr>" +
         "<td colspan='4'><p><label class='w3-text-red'><b>Estado</b></label></p><p><input type='radio' id='rbEntregadoSGC' name='rbEntregado' value='0' onclick='volverFormSGC();' checked> No Entregado&nbsp;&nbsp;" +
-        "<input type='radio' id='rbEntregadoSGC_2' name='rbEntregado' value='1' onclick='volverFormSGC();'> Entregado</p></td>" +
+        "<input type='radio' id='rbEntregadoSGC' name='rbEntregado' value='1' onclick='volverFormSGC();'> Entregado</p></td>" +
         "</tr>" +
 
         "</table>" +
@@ -162,7 +162,7 @@ try {
         "</table>" +
         "</div>";
 
-        document.getElementById("btnFooterEntregaSGC").innerHTML = "<button id='btnRegresarAgenciaSGC0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgenciaSGC0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+        document.getElementById("btnFooterEntregaSGC").innerHTML = "<button id='btnRegresarAgenciaSGC0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegresarAgenciaSGC0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
 
     }
     
@@ -927,7 +927,7 @@ function fechaActualSGC() {
 function volverFormSGC() {
     usuPrincipal();
     entConsultarSGC();
-    var htmlBotones = "<button id='btnRegresarAgenciaSGC0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgenciaSGC0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+    var htmlBotones = "<button id='btnRegresarAgenciaSGC0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegresarAgenciaSGC0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
     
     document.getElementById("btnFooterEntregaSGC").innerHTML = htmlBotones;
     llamarNuevoestilo("btnRegresarAgenciaSGC");

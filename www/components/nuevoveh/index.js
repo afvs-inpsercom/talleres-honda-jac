@@ -215,7 +215,7 @@ function vistaParametrosEntVeh() {
         "</td></tr>" +
          "</table>";
 
-        document.getElementById("btnFooterEntrega").innerHTML = "<button id='btnRegrearEntrega0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegrearEntrega0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+        document.getElementById("btnFooterEntrega").innerHTML = "<button id='btnRegrearEntrega0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegrearEntrega0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
         llamarNuevoestiloIconB("icnRegrearEntrega");
         llamarNuevoestilo("btnRegrearEntrega");
         //document.getElementById("btnFooterEntrega").innerHTML += "<a class='w3-btn w3-red primary' aria-label='Buscar2' onclick='captureImagenEV();'><i class='fa fa-camera-retro' aria-hidden='true'></i> foto</a>";
@@ -265,7 +265,7 @@ function vistaParametrosEntVeh() {
         "</table>" +
         "</div>";
 
-        document.getElementById("btnFooterEntrega").innerHTML = "<button id='btnRegrearEntrega0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegrearEntrega0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+        document.getElementById("btnFooterEntrega").innerHTML = "<button id='btnRegrearEntrega0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegrearEntrega0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
         llamarNuevoestiloIconB("icnRegrearEntrega");
         llamarNuevoestilo("btnRegrearEntrega");
 
@@ -2076,10 +2076,10 @@ function volverForm() {
 
 
     if (parseInt(localStorage.getItem("ls_dimensionW").toLocaleString()) > 361) {
-        document.getElementById("btnFooterEntrega").innerHTML = "<button id='btnRegrearEntrega0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegrearEntrega0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+        document.getElementById("btnFooterEntrega").innerHTML = "<button id='btnRegrearEntrega0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegrearEntrega0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
     }
     else {
-        document.getElementById("btnFooterEntrega").innerHTML = "<button id='btnRegrearEntrega0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegrearEntrega0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+        document.getElementById("btnFooterEntrega").innerHTML = "<button id='btnRegrearEntrega0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegrearEntrega0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
     }
 llamarNuevoestilo("btnRegrearEntrega");
 llamarNuevoestiloIconB("icnRegrearEntrega")

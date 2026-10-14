@@ -179,8 +179,8 @@ function vistaParametrosEntVeh2() {
 
         "<td valign='bottom' style='text-align:right'>" +
         "<p>" +
-         "<button id='btnBuscarAgecia0' onclick='entConsultar2();' class='w3-btn'><i id='2ocultar0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>" +
-        "&nbsp;&nbsp;<button id='btnBuscarAgecia1' class='w3-btn'><a id='2mostrar2' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
+         "<button id='btnBuscarAgecia0' onclick='entConsultar2();' class='w3-btn w3-red'><i id='2ocultar0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>" +
+        "&nbsp;&nbsp;<button id='btnBuscarAgecia1' class='w3-btn w3-red'><a id='2mostrar2' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
         "<a id='2ocultar2' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button>" +
         "</p>" +
         "</td>" +
@@ -213,7 +213,7 @@ function vistaParametrosEntVeh2() {
         "</td></tr>" +
          "</table>";
 
-        document.getElementById("2btnFooterEntrega").innerHTML = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+        document.getElementById("2btnFooterEntrega").innerHTML = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
 
     }
     else {
@@ -226,10 +226,10 @@ function vistaParametrosEntVeh2() {
         "<p><label class='w3-text-red'><b>Fin</b></label></p><p><input id='2dpentFecFin' style='max-width:95px' /></p>" +
         "</td> " +
         "<td valign='bottom'>" +
-        "<p><button id='btnBuscarAgecia0' onclick='entConsultar2();' class='w3-btn' style='padding:6px 8px'><i id='2ocultar0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>&nbsp;</p>" +
+        "<p><button id='btnBuscarAgecia0' onclick='entConsultar2();' class='w3-btn w3-red' style='padding:6px 8px'><i id='2ocultar0' class='fa fa-search' aria-hidden='true'></i> BUSCAR</button>&nbsp;</p>" +
         "</td>" +
          "<td valign='bottom'>" +
-        "<p><button id='btnBuscarAgecia1' class='w3-btn' style='padding:6px 8px'><a id='2mostrar2' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
+        "<p><button id='btnBuscarAgecia1' class='w3-btn w3-red' style='padding:6px 8px'><a id='2mostrar2' data-align='right' class='fa fa-angle-double-down' aria-hidden='true' data-role='button'></a>" +
         "<a id='2ocultar2' data-align='right' class='fa fa-angle-double-up' aria-hidden='true' data-role='button' style='display:none'></a></button></p>" +
         "</td>" +
         "</tr>" +
@@ -260,7 +260,7 @@ function vistaParametrosEntVeh2() {
         "</table>" +
         "</div>";
 
-        document.getElementById("2btnFooterEntrega").innerHTML = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+        document.getElementById("2btnFooterEntrega").innerHTML = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
 
     }
 llamarColorTexto(".w3-text-red");
@@ -1504,7 +1504,7 @@ function cargaInfoAgendaEntrega(dataGrid2) {
     agendaEntrega2(dataGrid2, document.getElementById("2datepicker").value);
 
 
-    var htmlBotones = "<button id='btnRegresarAgencia0' onclick='volverForm2()' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+    var htmlBotones = "<button id='btnRegresarAgencia0' onclick='volverForm2()' class='w3-btn w3-red'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
 
     document.getElementById("2btnFooterEntrega").innerHTML = htmlBotones;
     llamarNuevoestilo("btnRegresarAgencia");
@@ -2226,7 +2226,7 @@ function volverForm2() {
 
     entConsultar2();
 
-    var htmlBotones = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
+    var htmlBotones = "<button id='btnRegresarAgencia0' onclick='abrirPagina(\"home\")' class='w3-btn w3-red'><i id='icnRegresarAgencia0' class='fa fa-chevron-left' aria-hidden='true'></i> REGRESAR</button>";
     
     document.getElementById("2btnFooterEntrega").innerHTML = htmlBotones;
     llamarNuevoestilo("btnRegresarAgencia");
