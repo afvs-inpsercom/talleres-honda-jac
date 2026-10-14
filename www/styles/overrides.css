@@ -595,14 +595,30 @@
 #2agendaEntrega,
 #agendaEntrega,
 .responsivo,
-.responsivo1 {
-  overflow-x: auto !important;
-  -webkit-overflow-scrolling: touch;
-}
-
+.responsivo1,
+.scroll_horizontal,
+.k-grid,
 .k-grid-content {
   overflow-x: auto !important;
-  -webkit-overflow-scrolling: touch;
+  overflow-y: visible !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-x pan-y !important;
+  -ms-touch-action: pan-x pan-y !important;
+}
+
+/* Permitir que la tabla interna se expanda libremente dentro del contenedor scrollable */
+.responsivo > table,
+.responsivo1 > table,
+.scroll_horizontal > table,
+.k-grid table {
+  width: auto !important;
+  min-width: 100% !important;
+  table-layout: auto !important;
+}
+
+/* Evitar que Kendo Grid o TabStrip restrinjan altura o bloqueen scroll vertical */
+.k-grid {
+  height: auto !important;
 }
 
 .k-window,
@@ -621,4 +637,3 @@
   max-width: 100% !important;
   box-sizing: border-box !important;
 }
-
