@@ -1735,8 +1735,8 @@ function ConsultarMEUSAVN(inforusa, tipo_auto, partes) {
         localStorage.getItem("ls_usulog").toLocaleString();
 
 
-   //     window.myalert("<center><i class=\"fa fa-exclamation-triangle\"></i>UrlMotorEscape</center>", UrlMotorEscape);
-
+        console.log("=== URL SERVICIO ERP (vh68PreguntasAvaluoGet) ===", UrlMotorEscape);
+        window.myalert("<center><i class=\"fa fa-info-circle\"></i> URL SERVICIO ERP</center>", "<div style='word-break: break-all; text-align: left; font-size: 11px; user-select: text; -webkit-user-select: text;'><b>vh68PreguntasAvaluoGet:</b><br/>" + UrlMotorEscape + "</div>");
 
         var tipoAutoMsj = "";
         if (tipo_auto == "P") {
@@ -1758,7 +1758,7 @@ function ConsultarMEUSAVN(inforusa, tipo_auto, partes) {
 
                     if (inspeccionar(data).includes("null") == true) {
                         kendo.ui.progress($("#nuevovehScreen"), false);
-                        window.myalert("<center><i class=\"fa fa-exclamation-triangle\"></i>ALERTA</center>", "<center>No existen datos para el Formulario<br/><b>Entrega " + tipoAutoMsj + "</b></center>");
+                        window.myalert("<center><i class=\"fa fa-exclamation-triangle\"></i>ALERTA</center>", "<center>No existen datos para el Formulario<br/><b>Entrega " + tipoAutoMsj + "</b><br/><br/><div style='word-break: break-all; text-align: left; font-size: 10px; background:#f0f0f0; padding:6px; border:1px solid #ccc; user-select: text; -webkit-user-select: text;'><b>URL Consultada:</b><br/>" + UrlMotorEscape + "</div></center>");
                         return;
                     }
                     else {

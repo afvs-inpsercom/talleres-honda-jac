@@ -138,7 +138,7 @@ try {
 
          "<tr>" +
         "<td colspan='4'><p><label class='w3-text-red'><b>Estado</b></label></p><p><input type='radio' id='rbEntregadoSGC' name='rbEntregado' value='0' onclick='volverFormSGC();' checked> No Entregado&nbsp;&nbsp;" +
-        "<input type='radio' id='rbEntregadoSGC' name='rbEntregado' value='1' onclick='volverFormSGC();'> Entregado</p></td>" +
+        "<input type='radio' id='rbEntregadoSGC_2' name='rbEntregado' value='1' onclick='volverFormSGC();'> Entregado</p></td>" +
         "</tr>" +
 
         "</table>" +
